@@ -9,6 +9,7 @@ Source0:	http://www.cc.jyu.fi/~tjko/src/%{name}-%{version}.tar.gz
 # Source0-md5:	eda5b0d15d7373c9b0bc96bba4af61e0
 URL:		http://www.iki.fi/tjko/projects.html
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libjpeg-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +29,7 @@ uszkodzone pliki mog± byæ automatycznie kasowane).
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub aux
 %{__autoconf}
 %configure
 %{__make}
