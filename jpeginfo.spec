@@ -5,9 +5,9 @@ Version:	1.6.0
 Release:	1
 License:	GPL
 Group:		Applications/Multimedia
-URL:		http://www.iki.fi/tjko/projects.html
 Source0:	http://www.cc.jyu.fi/~tjko/src/%{name}-%{version}.tar.gz
 # Source0-md5:	eda5b0d15d7373c9b0bc96bba4af61e0
+URL:		http://www.iki.fi/tjko/projects.html
 BuildRequires:	autoconf
 BuildRequires:	libjpeg-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,7 +21,7 @@ automatically deleted).
 %description -l pl
 Jpeginfo wypisuje informacje i testuje integralno¶æ plików JPEG/JFIF.
 Program mo¿e generowaæ listê informacji na temat plików jpeg, a tak¿e
-byæ u¿ywany do testowania plików na wypadek b³êdów(dodatkowo
+byæ u¿ywany do testowania plików na wypadek b³êdów (dodatkowo
 uszkodzone pliki mog± byæ automatycznie kasowane).
 
 %prep
@@ -34,13 +34,15 @@ uszkodzone pliki mog± byæ automatycznie kasowane).
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install INSTALL_ROOT=$RPM_BUILD_ROOT
+
+%{__make} install \
+	INSTALL_ROOT=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
-%doc README
