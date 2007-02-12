@@ -1,5 +1,5 @@
 Summary:	Utility for testing JPEG files
-Summary(pl):	Narzêdzie do testowania plików JPEG
+Summary(pl.UTF-8):   NarzÄ™dzie do testowania plikÃ³w JPEG
 Name:		jpeginfo
 Version:	1.6.0
 Release:	1
@@ -19,11 +19,11 @@ Program can generate informative listings of jpeg files, and can also
 be used to test jpeg files for errors (optionally broken files can be
 automatically deleted).
 
-%description -l pl
-Jpeginfo wypisuje informacje i testuje integralno¶æ plików JPEG/JFIF.
-Program mo¿e generowaæ listê informacji na temat plików jpeg, a tak¿e
-byæ u¿ywany do testowania plików na wypadek b³êdów (dodatkowo
-uszkodzone pliki mog± byæ automatycznie kasowane).
+%description -l pl.UTF-8
+Jpeginfo wypisuje informacje i testuje integralnoÅ›Ä‡ plikÃ³w JPEG/JFIF.
+Program moÅ¼e generowaÄ‡ listÄ™ informacji na temat plikÃ³w jpeg, a takÅ¼e
+byÄ‡ uÅ¼ywany do testowania plikÃ³w na wypadek bÅ‚Ä™dÃ³w (dodatkowo
+uszkodzone pliki mogÄ… byÄ‡ automatycznie kasowane).
 
 %prep
 %setup -q
