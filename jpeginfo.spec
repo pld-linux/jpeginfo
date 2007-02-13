@@ -1,5 +1,5 @@
 Summary:	Utility for testing JPEG files
-Summary(pl.UTF-8):   Narzędzie do testowania plików JPEG
+Summary(pl.UTF-8):	Narzędzie do testowania plików JPEG
 Name:		jpeginfo
 Version:	1.6.0
 Release:	1
