@@ -2,7 +2,7 @@ Summary:	Utility for testing JPEG files
 Summary(pl.UTF-8):	Narzędzie do testowania plików JPEG
 Name:		jpeginfo
 Version:	1.6.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Multimedia
 Source0:	http://www.cc.jyu.fi/~tjko/src/%{name}-%{version}.tar.gz
@@ -37,7 +37,7 @@ cp -f /usr/share/automake/config.sub aux
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} -j1 install \
 	INSTALL_ROOT=$RPM_BUILD_ROOT
 
 %clean
