@@ -1,13 +1,13 @@
 Summary:	Utility for testing JPEG files
 Summary(pl.UTF-8):	Narzędzie do testowania plików JPEG
 Name:		jpeginfo
-Version:	1.6.0
-Release:	4
+Version:	1.6.1
+Release:	1
 License:	GPL
 Group:		Applications/Multimedia
-Source0:	http://www.cc.jyu.fi/~tjko/src/%{name}-%{version}.tar.gz
-# Source0-md5:	eda5b0d15d7373c9b0bc96bba4af61e0
-URL:		http://www.iki.fi/tjko/projects.html
+Source0:	http://www.kokkonen.net/tjko/src/%{name}-%{version}.tar.gz
+# Source0-md5:	344be10d6b16ec559c5d8b7e3707241f
+URL:		http://www.kokkonen.net/tjko/projects.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libjpeg-devel
@@ -46,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man?/*
+%attr(755,root,root) %{_bindir}/jpeginfo
+%{_mandir}/man1/jpeginfo.1*
